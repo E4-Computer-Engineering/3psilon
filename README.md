@@ -44,3 +44,8 @@ The project can build and release a set of multiple GNU/Linux distribution based
 2) Fixed disk layout partitioning
 3) Dynamic data handled by LVM at the end of the disk (/etc, /var/lib/docker, /home, etc.)
 4) Scripting to handle in-memory and persistent configuration
+
+## Frequently Asked Questions
+**Q:** Why not creating a new distro from a specific one
+>The independency from a specific distro fate is one of our mandatory goal. Secondly, what would be the best GNU/Linux distribution?
+We want to give the freedom of choice, as well as the ability to change your mind.
