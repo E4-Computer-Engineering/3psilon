@@ -1,5 +1,5 @@
 # 3psilon
-[Polymorphic|Minimalistic|Transactional] Operating System
+[Polymorphic|Minimalistic|Transactional] Operating System (3os)
 
 
 ## Idea
@@ -22,37 +22,25 @@ Containers are the building block to address the idempotency capability, but not
 3) Modularize
 
 ### Normalize
-[Diskimage-builder](https://docs.openstack.org/diskimage-builder/latest/), a tool for automatically building customized operating-system images, can handle the job to create a GNU/Linux image with the exact same characteristics regardless of the distribution they came from.
-Embedded approach followed by [NanoBSD](https://docs.freebsd.org/en_US.ISO8859-1/articles/nanobsd/article.html)
+Equality release opportunities. [Diskimage-builder](https://docs.openstack.org/diskimage-builder/latest/), a tool for automatically building customized operating-system images, can handle the job to create GNU/Linux images with the exact same characteristics regardless of the distribution they came from.
 
 ### Standardize
-All the builed GNU/Linux image will have same basic features:
+Rules are the key for interoperability. All the builed GNU/Linux images will have same basic features:
 1) Same partitioning and file system strategies
 2) Same container functionalities
 3) Same kernel capabilities
 4) Same service management
 
 ### Modularize
-
-## Disclaimer
-...
+Freedom is the foundation of democracy. Multiple choice for every "standard" feature can be selected from a pool of promoted list.
 
 
-## 10,000 feet view
-...
+## Overview
+The project can build and release a set of multiple GNU/Linux distribution based images following a matrix of standard features.
 
 
-## Settings
-...
-
-
-## Building
-...
-
-
-## Running
-...
-
-
-## Feedback / Input / Collaboration
-...
+### Basic Feaures:
+1) Dual read-only root for Blue/Green upgrade & rollback
+2) Fixed disk layout partitioning
+3) Dynamic data handled by LVM at the end of the disk (/etc, /var/lib/docker, /home, etc.)
+4) Scripting to handle in-memory and persistent configuration
